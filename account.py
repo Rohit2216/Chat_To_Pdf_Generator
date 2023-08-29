@@ -4,10 +4,13 @@ from firebase_admin import credentials
 from firebase_admin import auth
 
 # Initialize Firebase
+
 cred = credentials.Certificate('chattopdf-f142c-435381ca7cbe.json')
+
 # firebase_admin.initialize_app(cred)
 
 # Create a Streamlit app
+
 def app():
     st.title('Welcome to  :violet[Chat 2 PDF]')
 
