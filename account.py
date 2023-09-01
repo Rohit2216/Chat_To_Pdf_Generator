@@ -1,18 +1,18 @@
+# chat.py
+
 import streamlit as st
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import auth
 
 # Initialize Firebase
-
 cred = credentials.Certificate('chattopdf-f142c-435381ca7cbe.json')
-
 # firebase_admin.initialize_app(cred)
 
 # Create a Streamlit app
 
 def app():
-    st.title('Welcome to  :violet[Chat 2 PDF]')
+    st.title('Welcome to :blue[Chat with PDF]')
 
     choice = st.selectbox('Login/Signup', ['Login', 'Sign Up'])
 
@@ -49,3 +49,7 @@ def app():
 
             except auth.EmailAlreadyExistsError:
                 st.warning('Account creation failed. Email already exists.')
+
+# You can call the app() function to run this Streamlit app
+if __name__ == '__main__':
+    app()
