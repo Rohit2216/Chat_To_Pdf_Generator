@@ -2,7 +2,7 @@
 
 import streamlit as st
 from streamlit_option_menu import option_menu
-import home, account, trending, about, your_post, chat  # Import other app modules as needed
+import home, account, trending, about,  chat  # Import other app modules as needed
 
 st.set_page_config(page_title="Chat with Pdf 📝")
 
@@ -23,7 +23,7 @@ class MultiApp:
         with st.sidebar:
             app = option_menu(
                 menu_title='Chat with Pdf 📝',
-                options=['Home', 'Account', 'Trending', 'Chat', 'Your Posts', 'About'],
+                options=['Home', 'Account', 'Trending', 'Chat', 'About'],
                 icons=['house-fill', 'person-circle', 'trophy-fill', 'chat-fill', 'info-circle-fill'],
                 menu_icon='chat-text-fill',
                 default_index=0,  # Set the default page to 'Home'
@@ -43,8 +43,6 @@ class MultiApp:
             trending.app()
         if app == 'Chat':
             chat.app()  # Call the chat app function
-        if app == 'Your Posts':
-            your_post.app()
         if app == 'About':
             about.app()
 
