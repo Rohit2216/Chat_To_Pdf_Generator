@@ -1,13 +1,10 @@
-# main.py
-
 import streamlit as st
 from streamlit_option_menu import option_menu
-import home, account, trending, about,  chat  # Import other app modules as needed
+import home, account, trending, about, chat
 
-st.set_page_config(page_title="Chat with Pdf 📝")
+if 'pdf_data' not in st.session_state:
+    st.session_state.pdf_data = {}
 
-# Initialize session state
-st.session_state.username = None  # Initialize with None or an appropriate default value
 
 class MultiApp:
     def __init__(self):
@@ -22,11 +19,11 @@ class MultiApp:
     def run(self):
         with st.sidebar:
             app = option_menu(
-                menu_title='Chat with Pdf 📝',
-                options=['Home', 'Account', 'Trending', 'Chat', 'About'],
+                menu_title='Query Assistant',
+                options=['Home', 'Account', 'Trending', '📝Query Assistant', 'About'],
                 icons=['house-fill', 'person-circle', 'trophy-fill', 'chat-fill', 'info-circle-fill'],
                 menu_icon='chat-text-fill',
-                default_index=0,  # Set the default page to 'Home'
+                default_index=0,
                 styles={
                     "container": {"padding": "5!important", "background-color": 'black'},
                     "icon": {"color": "white", "font-size": "23px"},
@@ -41,9 +38,9 @@ class MultiApp:
             account.app()
         if app == "Trending":
             trending.app()
-        if app == 'Chat':
-            chat.app()  # Call the chat app function
-        if app == 'About':
+        if app == '📝Query Assistant':
+            chat.app()
+        if app == "About":
             about.app()
 
 if __name__ == '__main__':

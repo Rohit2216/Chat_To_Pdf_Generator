@@ -1,6 +1,18 @@
 import streamlit as st
 
 def app():
+    st.markdown(
+        """
+        <h1 style='display: flex; align-items: center;'>
+            <span style='font-size: 48px; color: orange;'>📝PDF </span>
+            <span style='font-size: 48px; color: white;'>Query</span>
+            <span style='font-size: 48px; color: green;'>Assistant</span>
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
+
+
     st.subheader('Trending thoughts')
 
     st.write("Explore the latest and most thought-provoking ideas from our community.")

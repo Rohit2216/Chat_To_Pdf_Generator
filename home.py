@@ -1,9 +1,18 @@
 import streamlit as st
 
 def app():
-    st.title('Welcome to :violet[Chat with PDF]')
+    st.markdown(
+        """
+        <h1 style='display: flex; align-items: center;'>
+            <span style='font-size: 48px; color: orange;'>📝PDF </span>
+            <span style='font-size: 48px; color: white;'>Query</span>
+            <span style='font-size: 48px; color: green;'>Assistant</span>
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
 
-    st.write('This is a simple application that allows you to convert chat messages into PDF documents.')
+    st.write('Welcome to **PDF Query Assistant**, a platform designed to help you convert chat messages into PDF documents.')
 
     st.write('To get started, please login first and then select one of the options from the sidebar.')
 
@@ -26,3 +35,5 @@ def app():
 
     # You can add more content or instructions here as needed.
 
+# Run the app
+app()
