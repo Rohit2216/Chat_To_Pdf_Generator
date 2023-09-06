@@ -16,15 +16,30 @@ This Streamlit app, named 📝PDF Query Assistant, is designed to assist users i
 
 ## Usage
 
-1. Make sure you have Python installed on your system.
-2. Install the necessary packages by running `pip install -r requirements.txt`.
-3. Run the app using the following command:
+1. **Configure Firebase API Key:**
+   - Before using the app, configure your Firebase API key for user authentication (login, signup, and signout).
+   - You can obtain a Firebase API key by following the Firebase documentation.
+   - Once you have the API key, create a `.env` file in your project directory and store the key as follows:
+     ```
+     FIREBASE_API_KEY=your_firebase_api_key_here
+     ```
+   - This key will be used for user-related functionalities.
+
+2. **Configure OpenAI API Key for PDF Tasks:**
+   - To utilize OpenAI's features for PDF analysis, make sure you have obtained an OpenAI API key.
+   - Create another entry in your `.env` file to store the OpenAI API key:
+     ```
+     OPENAI_API_KEY=your_openai_api_key_here
+     ```
+   - This key will be used for PDF-related tasks such as question-answering.
+
+3. Make sure you have Python installed on your system.
+4. Install the necessary packages by running `pip install -r requirements.txt`.
+5. Run the app using the following command:
 
    ```bash
    streamlit run main.py
-   ```
 
-4. The app will open in your default web browser, and you can start using it.
 
 ## Contributing
 
