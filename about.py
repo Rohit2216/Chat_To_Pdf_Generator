@@ -4,7 +4,17 @@ import streamlit as st
 # st.set_page_config(page_title="📝PDF Query Assistant 📝")
 
 def app():
-    st.title('About 📝PDF Query Assistant')
+    st.markdown(
+        """
+        <h1 style='display: flex; align-items: center;'>
+            <span style='font-size: 48px; '>About </span>
+            <span style='font-size: 48px; color: orange;'>📝PDF </span>
+            <span style='font-size: 48px; color: white;'>Query</span>
+            <span style='font-size: 48px; color: green;'>Assistant</span>
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
     
     st.markdown(
         "Welcome to **📝PDF Query Assistant**, a revolutionary platform designed to provide instant answers to questions from PDF documents. "

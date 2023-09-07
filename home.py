@@ -20,7 +20,7 @@ def app():
     st.write('1. Login with your credentials using the sidebar option.')
     st.write('2. Once logged in, you can upload your chat messages or paste them directly into the application.')
     st.write('3. Customize the PDF settings, such as title and author name.')
-    st.write('4. Click on the "Convert to PDF" button to generate the PDF document.')
+    st.write('4. Click on the "Upload to PDF" button to generate the PDF document.')
     st.write('5. You can download the PDF or share it with others.')
 
     st.header('Features:')
