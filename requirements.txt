@@ -8,3 +8,4 @@ firebase-admin
 streamlit_option_menu
 altair
 spacy
+pydantic
