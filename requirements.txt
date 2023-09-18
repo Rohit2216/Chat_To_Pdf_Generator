@@ -6,7 +6,3 @@ faiss-cpu==1.7.4
 streamlit-extras
 firebase-admin
 streamlit_option_menu
-altair
-spacy
-pydantic
-
