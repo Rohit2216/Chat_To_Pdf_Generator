@@ -6,6 +6,6 @@ faiss-cpu==1.7.4
 streamlit-extras
 firebase-admin
 streamlit_option_menu
-altair>=4.1.0
-vega-lite==4.8.1
+altair
+vega-lite
 
