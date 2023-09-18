@@ -9,3 +9,4 @@ streamlit_option_menu
 altair
 spacy
 pydantic
+pandas vega-lite
