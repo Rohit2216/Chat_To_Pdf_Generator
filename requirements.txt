@@ -7,5 +7,4 @@ streamlit-extras
 firebase-admin
 streamlit_option_menu
 altair
-vega-lite
-
+Vega-Altair
