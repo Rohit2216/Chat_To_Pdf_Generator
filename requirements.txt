@@ -8,3 +8,4 @@ firebase-admin
 streamlit_option_menu
 altair>=4.1.0
 vega-lite==4.8.1
+
